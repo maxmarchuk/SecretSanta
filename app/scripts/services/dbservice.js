@@ -20,6 +20,7 @@ angular.module('secretSantaApp')
             joinGroup: function (email, name, hash) {
 
                 return 'success';
+
             }
         };
     });
