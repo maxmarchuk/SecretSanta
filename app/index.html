@@ -22,11 +22,11 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
+      <div class="header" ng-controller="HeaderCtrl">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/new">New</a></li>
-          <li><a ng-href="#">Contact</a></li>
+          <li ng-class="{active: isActive('/')}"><a ng-href="#">Home</a></li>
+          <li ng-class="{active: isActive('/new')}"><a ng-href="#/new">New</a></li>
+          <li ng-class="{active: isActive('/contact')}"><a ng-href="#">Contact</a></li>
         </ul>
         <h3>Secret Santa</h3>
       </div>
@@ -78,6 +78,7 @@
         <script src="scripts/services/dbservice.js"></script>
         <script src="scripts/controllers/create.js"></script>
         <script src="scripts/controllers/join.js"></script>
+        <script src="scripts/controllers/header.js"></script>
         <!-- endbuild -->
 </body>
 </html>
