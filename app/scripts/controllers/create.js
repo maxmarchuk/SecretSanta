@@ -12,7 +12,6 @@ angular.module('secretSantaApp')
     $scope.created = false;
     $scope.header = 'New Group';
     $scope.submit = function() {
-        console.log('asfasf');
         if ($scope.name && $scope.email) {
             $scope.created = true;
             $scope.header = 'Group Created!';
