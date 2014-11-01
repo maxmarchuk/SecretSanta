@@ -9,15 +9,16 @@
  */
 angular.module('secretSantaApp')
     .controller('JoinCtrl', function ($scope, $routeParams, dbService) {
-        $scope.email = '';
         $scope.name = '';
-        $scope.hash = $routeParams.hash || null;
-        $scope.header = 'Join Group';
+        $scope.email = '';
         $scope.joined = false;
+        $scope.header = 'Join Group';
+        $scope.hash = $routeParams.hash || null;
+        $scope.groupies = dbService.getGroupies();
 
         $scope.join = function () {
             if ($scope.hash) {
-                if (dbService.joinGroup($scope.email, $scope.name, $scope.hash)) {
+                if (dbService.joinGroup($scope.name, $scope.email, $scope.hash)) {
                     $scope.joined = true;
 
                 } else {

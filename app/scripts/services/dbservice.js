@@ -21,6 +21,11 @@ angular.module('secretSantaApp')
 
                 return true;
 
+            },
+            getGroupies: function (hash) {
+                //hard coded value of people in group for now
+                //TODO: get groupies from DB, man.
+                return ['Samantha Wallace', 'Victor Borishevkin', 'Lamar Hawk', 'Max Marchuk', 'Casey Marchuk', 'Rebecca Stone', 'Chance Snow', 'Steven Snow'];
             }
         };
     });
