@@ -3,7 +3,7 @@
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   color: #000;
   padding-top: 1.2em;
-  background: repeating-linear-gradient(-45deg, white, white 30px, red 30px, red 60px);
+  background: repeating-linear-gradient(-45deg, #fffafa, #fffafa 30px, #ff463d 30px, #ff463d 60px);
   border-bottom: none !important;
 }
 
@@ -12,3 +12,9 @@
   text-shadow: 0 0 3px rgba(0,0,0,0.2);
   padding-left: 1em;
 }
+
+div.clearfix {
+  margin-bottom: 10px;
+}
+
+

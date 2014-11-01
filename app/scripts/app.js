@@ -17,8 +17,8 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
+  .config(['$routeProvider', '$locationProvider', function (routeProvider, locationProvider) {
+    routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
@@ -34,4 +34,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  }]);
