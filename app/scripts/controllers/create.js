@@ -8,7 +8,7 @@
  * Controller of the secretSantaApp
  */
 angular.module('secretSantaApp')
-  .controller('CreateCtrl', ['$scope', 'dbService', function ($scope, dbService) {
+  .controller('CreateCtrl', function ($scope, dbService) {
     $scope.created = false;
     $scope.header = 'New Group';
     $scope.submit = function() {
@@ -19,4 +19,4 @@ angular.module('secretSantaApp')
             dbService.makeGroup($scope.email, $scope.name);
         }
     };
-  }]);
+  });

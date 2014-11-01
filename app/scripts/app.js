@@ -31,6 +31,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+        .when('/join/:hash', {
+            templateUrl: 'views/join.html',
+            controller: 'JoinCtrl'
+        })
       .otherwise({
         redirectTo: '/'
       });
