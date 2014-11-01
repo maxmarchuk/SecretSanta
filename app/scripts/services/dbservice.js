@@ -16,7 +16,6 @@ angular.module('secretSantaApp')
                     editURL: '/edit/12345',
                     shareURL: '/join/67890'
                 };
-            joinGroup : 
             }
         };
     });
