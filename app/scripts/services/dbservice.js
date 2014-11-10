@@ -8,9 +8,9 @@
  * Service to manage any database transactions
  */
 angular.module('secretSantaApp')
-  .service('dbService', function dbService() {
+  .service('dbService', ['pg', function dbService(pg) {
     return {
-
+      postgres: pg,
       makeGroup: function (email, name) {
         return {
           editURL: '/edit/12345',
@@ -29,4 +29,4 @@ angular.module('secretSantaApp')
           'Rebecca Stone', 'Chance Snow', 'Joe Snow', 'Jack Johnson', 'Alden Sparks'];
       }
     };
-  });
+  }]);

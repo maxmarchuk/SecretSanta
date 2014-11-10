@@ -19,6 +19,7 @@ angular.module('secretSantaApp')
                 $scope.created = true;
                 $scope.header = 'Group Created!';
                 dbService.makeGroup($scope.email, $scope.name);
+                console.log(dbService.postgres);
             }
         };
     });
